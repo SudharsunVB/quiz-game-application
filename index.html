@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Quiz Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .full-page {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .tagline {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .start-btn {
+      padding: 12px 28px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+    }
+
+    .start-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome-page" class="full-page">
+    <h1>🎉 Welcome to Our Quiz Game 🎉</h1>
+    <p class="tagline">Get ready to test your knowledge across various topics. Let’s see how much you score!</p>
+    <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <script>
+    function startQuiz() {
+      // Redirect to actual quiz game (change quiz.html to your quiz page file)
+      window.location.href = "quiz.html";
+    }
+  </script>
+</body>
+</html>
